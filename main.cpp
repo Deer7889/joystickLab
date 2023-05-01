@@ -2,7 +2,6 @@
 //The while loop does not stop with a joystick push but continues
 //printing the joystick position on every loop as long as the joystick is pushed
 
-
 #include "mbed.h"       //add mbed library
 
 Serial pc(USBTX, USBRX);  //TX RX for terminal
@@ -25,6 +24,6 @@ int main() {    //main function
         }                       ////end of else if loop
         else if (r == 1) {      //start else if loop if right is pressed 
             printf("Joystick Right \r\n");      //print joystick right
-        }                       //end of else if loop
+        }
     }
 }
